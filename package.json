@@ -1,0 +1,13 @@
+{   "name": "express-messages-bootstrap"
+  , "description": "Express flash notification message rendering compatible with bootstrap. Based on TJ Holowaychuk's express-messages."
+  , "version": "0.0.3"
+  , "author": "Jason Giedymin <jasong@apache.org>"
+  , "keywords": ["express", "bootstrap", "flash"]
+  , "main": "index"
+  , "devDependencies": {
+      "express": "2.4.4"
+    , "expresso": "0.8.1"
+    , "ejs": "0.4.3"
+  }
+  , "engines": { "node": ">= 0.2.0" }
+}
