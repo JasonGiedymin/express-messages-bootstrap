@@ -12,7 +12,7 @@ Express-messages-bootstrap can also be [installed from the NPM repository](http:
 
 On cygwin you may need to force and display logging. Verbosity for some reason prevents hanging.
 
-    npm --force --loglevel verbose express-messages-bootstrap.
+    $ npm --force --loglevel verbose express-messages-bootstrap.
 
 ## Usage
 
