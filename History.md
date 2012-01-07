@@ -1,3 +1,12 @@
+0.0.5 / 2011-01-07
+==================
+
+	* Added "data-alert" tag
+
+0.0.4 FORK
+==================
+
+	* Initial commit of express-messages-bootstrap
 
 0.0.2 / 2011-04-25 
 ==================

@@ -15,7 +15,8 @@ module.exports = (req, res) ->
             msgs = messages[type]
 
             if msgs?
-                buf.push("<div class=\"alert-message #{type}\">")
+                # Maintain " (double quotes) for attributes so that user can inject ' (single quotes)
+                buf.push("<div class=\"alert-message #{type}\" data-alert=\"alert\">")
                 buf.push("<a class=\"close\" href=\"#\">×</a>")
                 for j in [0...msgs.length]
                     msg = msgs[j]

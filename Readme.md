@@ -23,19 +23,19 @@ Then in a view you may output the notifications:
 Which outputs HTML as shown below:
 
     <div id="messages">
-        <div class="alert-message error">
+        <div class="alert-message error" data-alert="alert">
             <a class="close" href="#">×</a>
             <p>This is an error.</p>
         </div>
-        <div class="alert-message info">
+        <div class="alert-message info" data-alert="alert">
             <a class="close" href="#">×</a>
             <p>This is an info.</p>
         </div>
-        <div class="alert-message warning">
+        <div class="alert-message warning" data-alert="alert">
             <a class="close" href="#">×</a>
             <p>This is a warning.</p>
         </div>
-        <div class="alert-message success">
+        <div class="alert-message success" data-alert="alert">
             <a class="close" href="#">×</a>
             <p>This is success.</p>
         </div>
