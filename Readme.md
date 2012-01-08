@@ -25,9 +25,15 @@ On cygwin you may need to force and display logging. Verbosity for some reason p
 
 ## Usage
 
-Then in a view you may output the notifications:
+Then in a view you may output the notifications based on your templating engine:
+
+### [EJS](https://github.com/visionmedia/ejs)
 
     <%- messages() %>
+
+### [Jade](http://jade-lang.com/)
+
+    != messages()
 
 Which outputs HTML as shown below:
 

@@ -21,6 +21,7 @@ module.exports = {
       req.flash('info', 'This is an info.');
       req.flash('warning', 'This is a warning.');
       req.flash('success', 'This is success.');
+
       res.render('messages.ejs', {
         layout: false
       });
@@ -34,19 +35,19 @@ module.exports = {
 
     var html = [
     '<div id="messages">'
-    ,'<div class="alert-message error">'
+    ,'<div class="alert-message error" data-alert="alert">'
     ,'<a class="close" href="#">×</a>'
     ,'<p>This is an error.</p>'
     ,'</div>'
-    ,'<div class="alert-message info">'
+    ,'<div class="alert-message info" data-alert="alert">'
     ,'<a class="close" href="#">×</a>'
     ,'<p>This is an info.</p>'
     ,'</div>'
-    ,'<div class="alert-message warning">'
+    ,'<div class="alert-message warning" data-alert="alert">'
     ,'<a class="close" href="#">×</a>'
     ,'<p>This is a warning.</p>'
     ,'</div>'
-    ,'<div class="alert-message success">'
+    ,'<div class="alert-message success" data-alert="alert">'
     ,'<a class="close" href="#">×</a>'
     ,'<p>This is success.</p>'
     ,'</div>'
