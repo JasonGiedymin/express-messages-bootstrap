@@ -2,6 +2,7 @@
 ==================
 
 	* Added "data-alert" tag
+	* Verified fBootstrap (facebook) compatability
 
 0.0.4 FORK
 ==================
