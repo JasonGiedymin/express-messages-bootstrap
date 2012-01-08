@@ -1,8 +1,17 @@
 # Express Messages
       
-The _express-messages-bootstrap_ module provides flash notification rendering compatible with [Bootstrap](http://twitter.github.com/bootstrap/) CSS. This module is based on TJ Holowaychuk's express-messages. To use simply assign it to a dynamic helper:
+The _express-messages-bootstrap_ module provides flash notification rendering that is compatible with [Bootstrap](http://twitter.github.com/bootstrap/) & [fBootstrap](http://ckrack.github.com/fbootstrapp/#alerts) CSSs frameworks. This module is based on TJ Holowaychuk's express-messages. To use, simply assign it to a dynamic helper:
 
     app.dynamicHelpers({ messages: require('express-messages-bootstrap') });
+
+## This Fork Code
+
+The main github branch is considered stable.
+GA's should be Tagged.
+Major changes are milestoned.
+If you want bleeding edge changes look for the highest versioned beta branch.
+
+At this point, this fork is seperately maintained.
 
 ## Installation
 
