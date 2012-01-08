@@ -6,12 +6,12 @@ The _express-messages-bootstrap_ module provides flash notification rendering th
 
 ## This Fork Code
 
-The main github branch is considered stable.
-GA's should be Tagged.
-Major changes are milestoned.
-If you want bleeding edge changes look for the highest versioned beta branch.
+This fork is seperately maintained but I do upstream sync with the original express-messages.
 
-At this point, this fork is seperately maintained.
+- The main github branch is considered stable.
+- GA's should be Tagged.
+- Major changes are milestoned.
+- If you want bleeding edge changes look for the highest versioned beta branch or tag.
 
 ## Installation
 
