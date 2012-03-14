@@ -9,7 +9,6 @@ var express = require('express')
 
 module.exports = {
   'test messages dynamic helper': function(){
-    this.callback = function(){};
     var app = express.createServer(
       express.cookieParser(),
       express.session({ secret: 'wahoo' })
@@ -37,19 +36,19 @@ module.exports = {
     var html = [
     '<div id="messages">'
     ,'<div class="alert alert-error" data-alert="alert">'
-    ,'<a class="close" href="#">×</a>'
+    ,'<a class="close" href="#" data-dismiss="alert">×</a>'
     ,'<p>This is an error.</p>'
     ,'</div>'
     ,'<div class="alert alert-info" data-alert="alert">'
-    ,'<a class="close" href="#">×</a>'
+    ,'<a class="close" href="#" data-dismiss="alert">×</a>'
     ,'<p>This is an info.</p>'
     ,'</div>'
     ,'<div class="alert alert-warning" data-alert="alert">'
-    ,'<a class="close" href="#">×</a>'
+    ,'<a class="close" href="#" data-dismiss="alert">×</a>'
     ,'<p>This is a warning.</p>'
     ,'</div>'
     ,'<div class="alert alert-success" data-alert="alert">'
-    ,'<a class="close" href="#">×</a>'
+    ,'<a class="close" href="#" data-dismiss="alert">×</a>'
     ,'<p>This is success.</p>'
     ,'</div>'
     ,'</div>'
