@@ -12,8 +12,8 @@ module.exports = function(req, res) {
       type = types[i];
       msgs = messages[type];
       if (msgs != null) {
-        buf.push("<div class=\"alert " + type + "\" data-alert=\"alert\">");
-        buf.push("<a class=\"close\" href=\"#\">×</a>");
+        buf.push("<div class=\"alert alert-" + type + "\" data-alert=\"alert\">");
+        buf.push("<a class=\"close\" href=\"#\" data-dismiss=\"alert\">×</a>");
         for (j = 0, _ref = msgs.length; 0 <= _ref ? j < _ref : j > _ref; 0 <= _ref ? j++ : j--) {
           msg = msgs[j];
           buf.push("<p>" + msg + "</p>");
