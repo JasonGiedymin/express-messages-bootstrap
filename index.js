@@ -16,7 +16,7 @@ module.exports = function(req, res) {
         buf.push("<a class=\"close\" href=\"#\" data-dismiss=\"alert\">×</a>");
         for (j = 0, _ref = msgs.length; 0 <= _ref ? j < _ref : j > _ref; 0 <= _ref ? j++ : j--) {
           msg = msgs[j];
-          buf.push("" + msg);
+          buf.push(msg);
         }
         buf.push("</div>");
       }
