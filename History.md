@@ -1,3 +1,9 @@
+0.0.8 / 2012-03-14
+==================
+	* Change div class names, props @Jared
+	* Increased versions for all dependencies
+	* Removed pre-formatted messages
+
 0.0.7 / 2012-02-29
 ==================
 	* Support for Bootstrap v2.0+ alerts

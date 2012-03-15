@@ -17,10 +17,10 @@ module.exports = {
     app.dynamicHelpers({ messages: messages });
     
     app.get('/', function(req, res, next){
-      req.flash('error', 'This is an error.');
-      req.flash('info', 'This is an info.');
-      req.flash('warning', 'This is a warning.');
-      req.flash('success', 'This is success.');
+      req.flash('error', '<p>This is an error.</p>');
+      req.flash('info', '<p>This is an info.</p>');
+      req.flash('warning', '<p>This is a warning.</p>');
+      req.flash('success', '<p>This is success.</p>');
 
       res.render('messages.ejs', {
         layout: false

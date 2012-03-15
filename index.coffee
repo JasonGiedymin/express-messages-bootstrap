@@ -20,7 +20,7 @@ module.exports = (req, res) ->
                 buf.push("<a class=\"close\" href=\"#\" data-dismiss=\"alert\">×</a>")
                 for j in [0...msgs.length]
                     msg = msgs[j]
-                    buf.push("<p>#{msg}</p>")
+                    buf.push("#{msg}")
                 buf.push("</div>")
         buf.push("</div>")
 
