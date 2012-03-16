@@ -17,10 +17,10 @@ module.exports = {
     app.dynamicHelpers({ messages: messages });
     
     app.get('/', function(req, res, next){
-      req.flash('error', '<p>This is an error.</p>');
-      req.flash('info', '<p>This is an info.</p>');
-      req.flash('warning', '<p>This is a warning.</p>');
-      req.flash('success', '<p>This is success.</p>');
+      req.flash('error', 'This is an error.');
+      req.flash('info', 'This is an info.');
+      req.flash('warning', 'This is a warning.');
+      req.flash('success', 'This is success.');
 
       res.render('messages.ejs', {
         layout: false
@@ -35,21 +35,21 @@ module.exports = {
 
     var html = [
     '<div id="messages">'
-    ,'<div class="alert alert-error" data-alert="alert">'
-    ,'<a class="close" href="#" data-dismiss="alert">×</a>'
-    ,'<p>This is an error.</p>'
+    ,'<div class="alert alert-error">'
+    ,'<a class="close" data-dismiss="alert">&times;</a>'
+    ,'This is an error.'
     ,'</div>'
-    ,'<div class="alert alert-info" data-alert="alert">'
-    ,'<a class="close" href="#" data-dismiss="alert">×</a>'
-    ,'<p>This is an info.</p>'
+    ,'<div class="alert alert-info">'
+    ,'<a class="close" data-dismiss="alert">&times;</a>'
+    ,'This is an info.'
     ,'</div>'
-    ,'<div class="alert alert-warning" data-alert="alert">'
-    ,'<a class="close" href="#" data-dismiss="alert">×</a>'
-    ,'<p>This is a warning.</p>'
+    ,'<div class="alert alert-warning">'
+    ,'<a class="close" data-dismiss="alert">&times;</a>'
+    ,'This is a warning.'
     ,'</div>'
-    ,'<div class="alert alert-success" data-alert="alert">'
-    ,'<a class="close" href="#" data-dismiss="alert">×</a>'
-    ,'<p>This is success.</p>'
+    ,'<div class="alert alert-success">'
+    ,'<a class="close" data-dismiss="alert">&times;</a>'
+    ,'This is success.'
     ,'</div>'
     ,'</div>'
     ].join('\n');
