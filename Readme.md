@@ -40,19 +40,19 @@ Which outputs HTML as shown below:
     <div id="messages">
         <div class="alert alert-error" data-alert="alert">
             <a class="close" href="#">×</a>
-            <p>This is an error.</p>
+            This is an error.
         </div>
         <div class="alert alert-info" data-alert="alert">
             <a class="close" href="#">×</a>
-            <p>This is an info.</p>
+            This is an info.
         </div>
         <div class="alert alert-warning" data-alert="alert">
             <a class="close" href="#">×</a>
-            <p>This is a warning.</p>
+            This is a warning.
         </div>
         <div class="alert alert-success" data-alert="alert">
             <a class="close" href="#">×</a>
-            <p>This is success.</p>
+            This is success.
         </div>
     </div>
 
