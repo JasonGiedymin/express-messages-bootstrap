@@ -13,8 +13,8 @@ module.exports = function(req, res) {
       if (msgs != null) {
         for (j = 0, _ref = msgs.length; 0 <= _ref ? j < _ref : j > _ref; 0 <= _ref ? j++ : j--) {
           msg = msgs[j];
-          buf.push("<div class=\"alert alert-" + type + "\" data-alert=\"alert\">");
-          buf.push("<a class=\"close\" href=\"#\" data-dismiss=\"alert\">×</a>");
+          buf.push("<div class=\"alert alert-" + type + "\">");
+          buf.push("<a class=\"close\" data-dismiss=\"alert\">&times;</a>");
           buf.push(msg);
           buf.push("</div>");
         }

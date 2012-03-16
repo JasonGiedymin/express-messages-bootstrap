@@ -18,8 +18,8 @@ module.exports = (req, res) ->
                 # Maintain " (double quotes) for attributes so that user can inject ' (single quotes)
                 for j in [0...msgs.length]
                     msg = msgs[j]
-                    buf.push("<div class=\"alert alert-#{type}\" data-alert=\"alert\">")
-                    buf.push("<a class=\"close\" href=\"#\" data-dismiss=\"alert\">×</a>")
+                    buf.push("<div class=\"alert alert-#{type}\">")
+                    buf.push("<a class=\"close\" data-dismiss=\"alert\">&times;</a>")
                     buf.push(msg)
                     buf.push("</div>")
         buf.push("</div>")
