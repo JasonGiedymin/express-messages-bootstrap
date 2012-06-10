@@ -1,4 +1,3 @@
-
 module.exports = function(req, res) {
   return function() {
     var buf, i, j, len, messages, msg, msgs, type, types, _ref;
@@ -12,13 +11,13 @@ module.exports = function(req, res) {
       type = types[i];
       msgs = messages[type];
       if (msgs != null) {
-        buf.push("<div class=\"alert alert-" + type + "\" data-alert=\"alert\">");
-        buf.push("<a class=\"close\" href=\"#\" data-dismiss=\"alert\">×</a>");
         for (j = 0, _ref = msgs.length; 0 <= _ref ? j < _ref : j > _ref; 0 <= _ref ? j++ : j--) {
           msg = msgs[j];
+          buf.push("<div class=\"alert alert-" + type + "\">");
+          buf.push("<a class=\"close\" data-dismiss=\"alert\">&times;</a>");
           buf.push(msg);
+          buf.push("</div>");
         }
-        buf.push("</div>");
       }
     }
     buf.push("</div>");
