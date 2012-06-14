@@ -1,5 +1,5 @@
 
 test:
-	@./node_modules/.bin/expresso --serial test/*.test.js
+	@./support/expresso/bin/expresso --serial test/*.test.js
 
 .PHONY: test

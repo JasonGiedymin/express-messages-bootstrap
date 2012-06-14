@@ -6,7 +6,7 @@
   , "repository": "git://github.com/JasonGiedymin/express-messages-bootstrap"
   , "main": "index"
   , "devDependencies": {
-      "express": "2.4.4"
+      "express": "2.5.8"
     , "expresso": "0.8.1"
     , "ejs": "0.4.3"
   }
