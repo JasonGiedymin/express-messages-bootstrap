@@ -38,21 +38,21 @@ Then in a view you may output the notifications based on your templating engine:
 Which outputs HTML as shown below:
 
     <div id="messages">
-        <div class="alert-message error" data-alert="alert">
-            <a class="close" href="#">×</a>
-            <p>This is an error.</p>
+        <div class="alert alert-error">
+            <a class="close" data-dismiss="alert">&times;</a>
+            This is an error.
         </div>
-        <div class="alert-message info" data-alert="alert">
-            <a class="close" href="#">×</a>
-            <p>This is an info.</p>
+        <div class="alert alert-info">
+            <a class="close" data-dismiss="alert">&times;</a>
+            This is an info.
         </div>
-        <div class="alert-message warning" data-alert="alert">
-            <a class="close" href="#">×</a>
-            <p>This is a warning.</p>
+        <div class="alert alert-warning">
+            <a class="close" data-dismiss="alert">&times;</a>
+            This is a warning.
         </div>
-        <div class="alert-message success" data-alert="alert">
-            <a class="close" href="#">×</a>
-            <p>This is success.</p>
+        <div class="alert alert-success">
+            <a class="close" data-dismiss="alert">&times;</a>
+            This is success.
         </div>
     </div>
 
