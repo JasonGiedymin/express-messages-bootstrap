@@ -14,7 +14,8 @@ module.exports = function(req, res) {
         for (j = 0, _ref = msgs.length; 0 <= _ref ? j < _ref : j > _ref; 0 <= _ref ? j++ : j--) {
           msg = msgs[j];
           buf.push("<div class=\"alert alert-" + type + " fade in\">");
-          buf.push("<a href=\"#\" class=\"close\" data-dismiss=\"alert\">&times;</a>");
+          buf.push('<button type="button" class="close" data-dismiss="alert">&times;</a>');
+          // buf.push("<a href=\"#\" class=\"close\" data-dismiss=\"alert\">&times;</a>");
           buf.push(msg);
           buf.push("</div>");
         }
