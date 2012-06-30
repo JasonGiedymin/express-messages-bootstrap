@@ -5,7 +5,7 @@ module.exports = function(req, res) {
     messages = req.flash();
     types = Object.keys(messages);
     len = types.length;
-    if (!len) return '';
+    if (!len) return '<div id="messages"></div>';
     buf.push('<div id="messages">');
     for (i = 0; 0 <= len ? i < len : i > len; 0 <= len ? i++ : i--) {
       type = types[i];
