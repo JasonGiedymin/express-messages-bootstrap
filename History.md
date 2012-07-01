@@ -1,3 +1,10 @@
+0.1.0 / 2012-07-01
+==================
+	* Use button (<button>) instead of from anchor (<a>)
+	* Update tests
+	* Add tests to demonstrate additional classes
+	* Merge pull request [by niftylettuce and romanmt]
+
 0.0.9 / 2012-06-14
 ==================
 	* Update dev dependencies

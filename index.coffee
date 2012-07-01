@@ -6,7 +6,7 @@ module.exports = (req, res) ->
         len = types.length
 
         if !len
-            return ''
+            return '<div id=\"messages\"></div>';
 
         buf.push('<div id="messages">')
 
@@ -19,7 +19,7 @@ module.exports = (req, res) ->
                 for j in [0...msgs.length]
                     msg = msgs[j]
                     buf.push("<div class=\"alert alert-#{type}\">")
-                    buf.push("<a class=\"close\" data-dismiss=\"alert\">&times;</a>")
+                    buf.push("<button class=\"close\" data-dismiss=\"alert\">&times;</button>")
                     buf.push(msg)
                     buf.push("</div>")
         buf.push("</div>")
