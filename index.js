@@ -5,16 +5,17 @@ module.exports = function(req, res) {
     messages = req.flash();
     types = Object.keys(messages);
     len = types.length;
-    if (!len) return '';
+    if (!len) return '<div id="messages"></div>';
     buf.push('<div id="messages">');
     for (i = 0; 0 <= len ? i < len : i > len; 0 <= len ? i++ : i--) {
       type = types[i];
       msgs = messages[type];
-      if (msgs != null) {
+      if (msgs !== null) {
         for (j = 0, _ref = msgs.length; 0 <= _ref ? j < _ref : j > _ref; 0 <= _ref ? j++ : j--) {
           msg = msgs[j];
-          buf.push("<div class=\"alert alert-" + type + "\">");
-          buf.push("<a class=\"close\" data-dismiss=\"alert\">&times;</a>");
+          buf.push("<div class=\"alert alert-" + type + " fade in\">");
+          buf.push('<button type="button" class="close" data-dismiss="alert">&times;</button>');
+          // buf.push("<a href=\"#\" class=\"close\" data-dismiss=\"alert\">&times;</a>");
           buf.push(msg);
           buf.push("</div>");
         }
