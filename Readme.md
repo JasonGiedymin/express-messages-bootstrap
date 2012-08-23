@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/JasonGiedymin/express-messages-bootstrap.png)](http://travis-ci.org/JasonGiedymin/express-messages-bootstrap)
 # Express Messages
       
 The _express-messages-bootstrap_ module provides flash notification rendering that is compatible with [Bootstrap](http://twitter.github.com/bootstrap/) CSS framework. This module is based on TJ Holowaychuk's express-messages. To use, simply assign it to a dynamic helper:
