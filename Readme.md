@@ -1,5 +1,10 @@
 # Express Messages
-      
+
+# Express v3.x NOTE!
+
+See [v1.0.0rc1 branch](https://github.com/JasonGiedymin/express-messages-bootstrap/tree/v1.0rc-expressv3) for Express v3.x compatibility
+
+## Continue on for Express v2.x compatibility      
 The _express-messages-bootstrap_ module provides flash notification rendering that is compatible with [Bootstrap](http://twitter.github.com/bootstrap/) CSS framework. This module is based on TJ Holowaychuk's express-messages. To use, simply assign it to a dynamic helper:
 
     app.dynamicHelpers({ messages: require('express-messages-bootstrap') });
