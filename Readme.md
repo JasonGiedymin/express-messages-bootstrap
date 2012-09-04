@@ -31,22 +31,26 @@ like them rendered as they used to be you'll have to use:
 
     .with({should_render:true})
 
+Use rmessage() method (rendering message).
+
 
 ### [Jade](http://jade-lang.com/)
 
-    if (messages && messages_rendered)
+    if (messages_rendered)
+      h3 Rendered
       // Rendered Messages `require('express-messages-bootstrap').with({should_render:true})`
-      div!= messages()
+      div!= rmessages()
 
 
 ## Normal usage
 
-You can access the messages and with your template iterate on them.
+You can access the raw messages and with your template iterate on them.
 
 
 ### [Jade](http://jade-lang.com/)
 
-    if (messages && !messages_rendered)
+    if (!messages_rendered)
+      h3 Raw
       // Raw Messages `require('express-messages-bootstrap')`
       ul
         each message in messages
