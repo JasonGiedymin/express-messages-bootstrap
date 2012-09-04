@@ -1,3 +1,7 @@
+1.0.0rc1 / 2012-09-03
+==================
+  * Complete re-write for Express 3.0
+
 0.1.0 / 2012-07-01
 ==================
 	* Use button (<button>) instead of from anchor (<a>)

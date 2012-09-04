@@ -1,17 +1,17 @@
 # Express Messages
       
-The _express-messages-bootstrap_ module provides flash notification rendering that is compatible with [Bootstrap](http://twitter.github.com/bootstrap/) CSS framework. This module is based on TJ Holowaychuk's express-messages. To use, simply assign it to a dynamic helper:
+The _express-messages-bootstrap_ module provides flash notification rendering that is compatible with [Bootstrap](http://twitter.github.com/bootstrap/) CSS framework. 
 
-    app.dynamicHelpers({ messages: require('express-messages-bootstrap') });
+    // Raw messages, do with it what you like
+    var messages = require('express-messages-bootstrap');
 
-## This Fork Code
+    // Old v2 rendering messages
+    var messages = require('express-messages-bootstrap').with({should_render:true});
 
-This fork is seperately maintained but I do upstream sync with the original express-messages.
+## Rewrite
 
-- The main github branch is considered stable.
-- GA's should be Tagged.
-- Major changes are milestoned.
-- If you want bleeding edge changes look for the highest versioned beta branch or tag.
+Version 1.0 is a complete rewrite from previous versions (which were forked from express-messages).
+
 
 ## Installation
 
@@ -23,17 +23,37 @@ On cygwin you may need to force and display logging. Verbosity for some reason p
 
     $ npm --force --loglevel verbose express-messages-bootstrap.
 
-## Usage
 
-Then in a view you may output the notifications based on your templating engine:
+## Backward Compatible V2 Usage
 
-### [EJS](https://github.com/visionmedia/ejs)
+By default only a raw list of messages in the order which you submit them are accessible. If you would
+like them rendered as they used to be you'll have to use:
 
-    <%- messages() %>
+    .with({should_render:true})
+
 
 ### [Jade](http://jade-lang.com/)
 
-    != messages()
+    if (messages && messages_rendered)
+      // Rendered Messages `require('express-messages-bootstrap').with({should_render:true})`
+      div!= messages()
+
+
+## Normal usage
+
+You can access the messages and with your template iterate on them.
+
+
+### [Jade](http://jade-lang.com/)
+
+    if (messages && !messages_rendered)
+      // Raw Messages `require('express-messages-bootstrap')`
+      ul
+        each message in messages
+          li= message
+
+
+### Output
 
 Which outputs HTML as shown below:
 
@@ -68,11 +88,9 @@ Then run the tests:
 
 ## License 
 
-Original express-messages License:
-
 (The MIT License)
 
-Copyright (c) 2011 TJ Holowaychuk &lt;tj@vision-media.ca&gt;
+Copyright (c) 2012 Jason Giedymin
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
