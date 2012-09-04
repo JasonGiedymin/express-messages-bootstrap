@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/JasonGiedymin/express-messages-bootstrap.png)](http://travis-ci.org/JasonGiedymin/express-messages-bootstrap)
 # Express Messages
 
 # Express v3.x NOTE!
