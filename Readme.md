@@ -57,7 +57,10 @@ You can access the raw messages and with your template iterate on them.
           li= message
 
 
-### Output
+## Output (Only for v2 Compatibility mode)
+
+Note: You have full access to the messages list. If you want the old style of
+having the middelware render content for you follow the v2 directions.
 
 Which outputs HTML as shown below:
 
