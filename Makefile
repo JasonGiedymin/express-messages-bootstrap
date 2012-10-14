@@ -1,5 +1,9 @@
+MOCHA_OPTS= -c
+REPORTER = spec
 
 test:
-	@./support/expresso/bin/expresso --serial test/*.test.js
+	@NODE_ENV=test ./node_modules/.bin/mocha \
+		--reporter $(REPORTER) \
+		$(MOCHA_OPTS)
 
 .PHONY: test

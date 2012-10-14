@@ -1,14 +1,21 @@
 {   "name": "express-messages-bootstrap"
-  , "description": "Express flash notification message rendering compatible with Twitter's Bootstrap v2.0+. Based on TJ Holowaychuk's express-messages."
-  , "version": "0.1.0"
+  , "description": "Express v3+ flash and messages notification, rendering compatible with Twitter's Bootstrap v2.0+"
+  , "version": "1.0.0rc1"
   , "author": "Jason Giedymin <jasong@apache.org>"
   , "keywords": ["express", "bootstrap", "flash"]
   , "repository": "git://github.com/JasonGiedymin/express-messages-bootstrap"
   , "main": "index"
+  , "dependencies": {}
   , "devDependencies": {
-      "express": "2.5.8"
-    , "expresso": "0.8.1"
-    , "ejs": "0.4.3"
+    "ejs": "*",
+    "mocha": "*",
+    "jade": "*",
+    "hjs": "*",
+    "stylus": "*",
+    "should": "*",
+    "connect-redis": "*",
+    "github-flavored-markdown": "*",
+    "supertest": "0.0.1"
   }
   , "engines": { "node": ">= 0.2.0" }
 }
